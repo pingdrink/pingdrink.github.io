@@ -675,6 +675,12 @@ footer .wrap.rodape-base {
   .final-cartao { border-radius: 22px; }
   .botao.final-botao { width: 100%; justify-content: center; }
 }
+/* aviso de privacidade */
+.privacidade .wrap { padding-block: clamp(40px, 6vw, 72px); display: grid; gap: 12px; max-width: 760px; }
+.privacidade h2 { margin: 0; font-weight: 600; font-stretch: 82%; font-size: 1.5rem; letter-spacing: -0.015em; }
+.privacidade p { margin: 0; color: var(--tinta-2); font-size: 0.95rem; }
+.privacidade b { color: var(--tinta); font-weight: 600; overflow-wrap: anywhere; }
+.letra-miuda a { color: var(--azul); }
 </style>
 </head>
 <body>
@@ -732,7 +738,7 @@ footer .wrap.rodape-base {
             </div>
             <p class="aviso-geral" id="aviso-geral" hidden></p>
             <button class="botao" id="enviar" type="submit">Garantir meu desconto</button>
-            <p class="letra-miuda">Seus dados são usados apenas para comunicações da pré-venda da Ping.</p>
+            <p class="letra-miuda">Seus dados são usados apenas para comunicações da pré-venda da Ping. <a href="#privacidade">Aviso de privacidade</a>.</p>
           </form>
         </div>
 
@@ -864,6 +870,15 @@ footer .wrap.rodape-base {
     <small>Pré-venda com desconto de lançamento</small>
   </div>
 </div>
+
+<section class="privacidade" id="privacidade" aria-labelledby="privacidade-titulo">
+  <div class="wrap">
+    <span class="rotulo">LGPD</span>
+    <h2 id="privacidade-titulo">Aviso de privacidade</h2>
+    <p>Ao entrar na lista da pré-venda, você nos informa <b>nome, e-mail e telefone</b>. Usamos esses dados apenas para avisar sobre a abertura da venda, enviar o desconto de lançamento e novidades da Ping. Não vendemos nem compartilhamos seus dados com outras empresas.</p>
+    <p>Os dados ficam guardados em uma planilha privada, com acesso restrito à equipe da Ping, até o fim da pré-venda ou até você pedir a exclusão. Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo e-mail <b>bgheneimprog@gmail.com</b>.</p>
+  </div>
+</section>
 
 <div class="azulejo" aria-hidden="true"></div>
 <div class="barra-fixa vidro" id="barra-fixa" aria-hidden="true">
